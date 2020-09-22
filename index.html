@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Page</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="topnav" id="myTopnav">
+		<a href="#home">Home</a>
+		<a href="#news">News</a>
+		<a href="#about">About</a>
+		<a href="#contact">Contact</a>
+		<a href="#services">Servicess</a>
+		<a href="#other">Other</a>
+		<a href="#logIn" class="active">Log In</a>
+	</div>
+	<div id="log_in">
+		<div class="text">
+			<h1>Registration Here</h1>
+		</div><br>
+		<form action="" id="my_form">
+			<input type="text" name="firstName" id="firstName" placeholder="Enter Your First Name"><br><br>
+			<input type="text" name="lasttName" id="lastName" placeholder="Enter Your Last Name"><br><br>
+			<div id="email_block">
+				<div id = "email_block_1">
+            		<input type="email" name="email" id="email_1" placeholder="Enter Your Email">
+            		<button type="button" id="email_btn" onclick="addEmailFunction()">Add Email</button>
+        		</div>
+			</div><br>
+			<div id="phone_block">
+        		<div id = "phone_block_1">
+            		<input type="tel" name="phone" id="phone_1" placeholder="Enter Your Phone Number Whith Zero">
+            		<button type="button" id="phone_btn" onclick="addPhoneFunction()">Add Phone</button>
+        		</div>
+    		</div><br>
+    		<input type="password" id="password" onchange="changeFunction()" placeholder="Enter Your Password"><br><br>
+    		<div id = "pass_div"></div><br>
+    		<button id="done" type="button">Save</button>
+		</form>
+	</div>
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
